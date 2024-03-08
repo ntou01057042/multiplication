@@ -1,6 +1,7 @@
 package org.example.multiplication.challenge;
 
 import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
 import org.example.multiplication.user.User;
@@ -11,17 +12,12 @@ import org.example.multiplication.user.User;
 @AllArgsConstructor
 @Getter
 @ToString
+@EqualsAndHashCode
 public class ChallengeAttempt {
-
-    private long id;
-
-    private long userId;
-
+    private Long id;
+    private User user;
     private int factorA;
-
     private int factorB;
-
     private int resultAttempt;
-
     private boolean correct;
 }

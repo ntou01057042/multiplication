@@ -1,6 +1,7 @@
 package org.example.multiplication.user;
 
 import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
 
@@ -10,9 +11,8 @@ import lombok.ToString;
 @AllArgsConstructor
 @Getter
 @ToString
+@EqualsAndHashCode
 public class User {
-
-    private long id;
-
+    private Long id;
     private String alias;
 }

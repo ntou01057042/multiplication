@@ -1,6 +1,7 @@
 package org.example.multiplication.challenge;
 
 import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
 
@@ -10,9 +11,8 @@ import lombok.ToString;
 @AllArgsConstructor
 @Getter
 @ToString
+@EqualsAndHashCode
 public class Challenge {
-
     private int factorA;
-
     private int factorB;
 }
